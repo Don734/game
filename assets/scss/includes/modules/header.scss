@@ -96,7 +96,6 @@
     }
 
     .nav {
-        position: relative;
         padding-top: 5px;
         padding-bottom: 20px;
 
@@ -106,6 +105,7 @@
             flex-wrap: wrap;
 
             .nav-item {
+                position: relative;
                 flex: 1 0 15%;
                 max-width: max-content;
                 margin-top: 15px;
@@ -116,8 +116,8 @@
                     transition: .1s ease;
 
                     &:hover, &.active {
-                        color: $color-7;
-                        text-decoration: underline;
+                        color: #0f2e57;
+                        background: $color-7;
                     }
 
                     span {
@@ -139,8 +139,8 @@
                 &.dropdown-item {
                     .dropdown-menu {
                         position: absolute;
-                        max-width: 240px;
-                        width: 100%;
+                        left: -1px;
+                        width: 240px;
                         background: #0f2e57;
                         opacity: 0;
                         visibility: hidden;
@@ -180,12 +180,6 @@
                     }
 
                     &:hover {
-                        & > .nav-link {
-                            color: $color-7;
-                            background: #0f2e57;
-                            text-decoration: underline;
-                        }
-
                         & > .dropdown-menu {
                             visibility: visible;
                             opacity: 1;
