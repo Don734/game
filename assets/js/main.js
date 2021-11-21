@@ -21,7 +21,9 @@ $(document).ready(function () {
         if ( !( ($(e.target).parents('.sidebar').length) || ($(e.target).hasClass('nav-link')) 
         || ($(e.target).parents('.openSidebar').length) || ($(e.target).hasClass('openSidebar')) 
         || ($(e.target).parents('.openMenu').length) || ($(e.target).hasClass('openMenu')) ) ) {
-            isShowSidebar();
+            $('body').css('margin-left', '0');
+            $('.openSidebar').css('right', '0');
+            $('.openMenu').css('right', '0');
             $('.sidebar').removeClass('show');
         }
     })
