@@ -10,6 +10,12 @@ $(document).ready(function () {
         $('.sidebar').toggleClass('show');
     });
 
+    $('.sidebar .nav-item.dropdown-item').click(function (e) {
+        e.preventDefault();
+        $('.sidebar .nav-item.dropdown-item').siblings().removeClass('active');
+        $(this).addClass('active');
+    })
+
     $(document).on('click', function (e) {
         if ( !( ($(e.target).parents('.nav').length) || ($(e.target).hasClass('nav-link')) 
         || ($(e.target).parents('.openMenu').length) || ($(e.target).hasClass('openMenu')) ) ) {
