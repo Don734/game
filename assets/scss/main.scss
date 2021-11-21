@@ -1,6 +1,13 @@
 //BASE
-@import 'includes/base/_fonts';
-@import 'includes/base/_vars';
-@import 'includes/base/_body';
+@import 'includes/base/_colors';
+@import 'includes/base/_default';
 
 // MODULES
+@import 'includes/modules/header.scss';
+@import 'includes/modules/sidebar.scss';
+@import 'includes/modules/home.scss';
+@import 'includes/modules/games.scss';
+@import 'includes/modules/news.scss';
+@import 'includes/modules/info.scss';
+@import 'includes/modules/footer.scss';
+@import 'includes/modules/media.scss';

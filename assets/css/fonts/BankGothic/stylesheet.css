@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'BankGothicMediumC';
+    src: url('BankGothicMediumC.eot');
+    src: url('BankGothicMediumC.eot?#iefix') format('embedded-opentype'),
+        url('BankGothicMediumC.woff2') format('woff2'),
+        url('BankGothicMediumC.woff') format('woff'),
+        url('BankGothicMediumC.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -35,16 +35,7 @@
         <nav class="nav">
             <div class="container">
                 <ul class="nav-menu">
-                    <li class="nav-item dropdown-item">
-                        <a class="nav-link" href="#">Все</a>
-                        <ul class="dropdown-menu">
-                            <li class="nav-item"><a class="nav-link" href="#">Выпадающее меню</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Список подпунктов</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Пример выпадающего меню</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Список типов игр</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Пункты меню</a></li>
-                        </ul>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Все</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Логика</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Стрелялки</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Гонки</a></li>
@@ -59,83 +50,22 @@
                     <li class="nav-item"><a class="nav-link" href="#">Игры по мультфильмам</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Игры для двоих</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Ролевые и стратегии</a></li>
-                    <li class="nav-item favorite"><a class="nav-link" href="#"><span class="material-icons-outlined">favorite</span> Избранное</a></li>
-                    <li class="nav-item signin"><a class="nav-link" href="#">Войти</a></li>
-                    <li class="nav-item signup"><a class="nav-link" href="#">Зарегистрироваться</a></li>
                 </ul>
             </div>
         </nav>
-        <div class="header__best-games">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <h5 class="title"><a href="game.html">Game name</a></h5>
-                        <p class="desc">Short description</p>
-                        <div class="star-ratings-css">
-                            <div class="star-ratings-css-top"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                            <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                        </div>
-                        <div class="img-block">
-                            <img src="./assets/img/game.jpg" alt="">
-                        </div>
-                        <div class="buttons-wrap">
-                            <a class="link-play" href="#">Play</a>
-                            <a class="link-favorite" href="#"><span class="material-icons-outlined">favorite</span></a>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <h5 class="title"><a href="#">Game name</a></h5>
-                        <p class="desc">Short description</p>
-                        <div class="star-ratings-css">
-                            <div class="star-ratings-css-top"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                            <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                        </div>
-                        <div class="img-block">
-                            <img src="./assets/img/game.jpg" alt="">
-                        </div>
-                        <div class="buttons-wrap">
-                            <a class="link-play" href="#">Play</a>
-                            <a class="link-favorite" href="#"><span class="material-icons-outlined">favorite</span></a>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <h5 class="title"><a href="#">Game name</a></h5>
-                        <p class="desc">Short description</p>
-                        <div class="star-ratings-css">
-                            <div class="star-ratings-css-top"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                            <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                        </div>
-                        <div class="img-block">
-                            <img src="./assets/img/game.jpg" alt="">
-                        </div>
-                        <div class="buttons-wrap">
-                            <a class="link-play" href="#">Play</a>
-                            <a class="link-favorite" href="#"><span class="material-icons-outlined">favorite</span></a>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <h5 class="title"><a href="#">Game name</a></h5>
-                        <p class="desc">Short description</p>
-                        <div class="star-ratings-css">
-                            <div class="star-ratings-css-top"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                            <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                        </div>
-                        <div class="img-block">
-                            <img src="./assets/img/game.jpg" alt="">
-                        </div>
-                        <div class="buttons-wrap">
-                            <a class="link-play" href="#">Play</a>
-                            <a class="link-favorite" href="#"><span class="material-icons-outlined">favorite</span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </header>
-    <main class="main">
+    <main class="main games">
         <div class="container">
-            <button class="openSidebar"><span class="material-icons-outlined">view_sidebar</span></button>
-            <button class="openMenu"><span class="material-icons-outlined">menu</span></button>
+            <div class="breadcrumb-wrap">
+                <ul class="breadcrumb__list">
+                    <li class="breadcrumb__item">
+                        <a class="breadcrumb__link" href="index.html">Главная</a>
+                    </li>
+                    <li class="breadcrumb__item active">
+                        Игры
+                    </li>
+                </ul>
+            </div>
             <aside class="sidebar">
                 <div class="social-row">
                     <a class="link" href="#"><span><i class="fab fa-facebook-f"></i></span></a>
@@ -172,49 +102,60 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="banner">
-                    <h5 class="title">Banner</h5>
-                    <div class="img-block">
-                        <img src="./assets/img/game.jpg" alt="">
-                    </div>
-                </div>
-                <div class="best-players">
-                    <h5 class="title">Сейчас выигрывают:</h5>
+                <div class="top-games">
+                    <h5 class="title">Популярные игры</h5>
                     <div class="row">
                         <div class="col">
-                            <a class="link" href="#">Game name <span class="icon material-icons-outlined">chevron_right</span></a>
-                            <div class="wrap">
-                                <div class="img-block">
-                                    <img src="./assets/img/user.jpg" alt="">
-                                </div>
-                                <div class="wrap-inner">
-                                    <a class="user-link" href="#">Username</a>
-                                    <p class="paid">$ 3 850</p>
-                                </div>
+                            <a class="link" href="#">Lorem ipsum dolor</a>
+                            <p class="text">Short description</p>
+                            <div class="star-ratings-css">
+                                <div class="star-ratings-css-top"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                                <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
                             </div>
                         </div>
                         <div class="col">
-                            <a class="link" href="#">Game name <span class="icon material-icons-outlined">chevron_right</span></a>
-                            <div class="wrap">
-                                <div class="img-block">
-                                    <img src="./assets/img/user.jpg" alt="">
-                                </div>
-                                <div class="wrap-inner">
-                                    <a class="user-link" href="#">Username</a>
-                                    <p class="paid">$ 3 850</p>
-                                </div>
+                            <a class="link" href="#">Lorem ipsum dolor</a>
+                            <p class="text">Short description</p>
+                            <div class="star-ratings-css">
+                                <div class="star-ratings-css-top"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                                <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
                             </div>
                         </div>
                         <div class="col">
-                            <a class="link" href="#">Game name <span class="icon material-icons-outlined">chevron_right</span></a>
-                            <div class="wrap">
-                                <div class="img-block">
-                                    <img src="./assets/img/user.jpg" alt="">
-                                </div>
-                                <div class="wrap-inner">
-                                    <a class="user-link" href="#">Username</a>
-                                    <p class="paid">$ 3 850</p>
-                                </div>
+                            <a class="link" href="#">Lorem ipsum dolor</a>
+                            <p class="text">Short description</p>
+                            <div class="star-ratings-css">
+                                <div class="star-ratings-css-top"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                                <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="new-games">
+                    <h5 class="title">Новые игры</h5>
+                    <div class="row">
+                        <div class="col">
+                            <a class="link" href="#">Lorem ipsum dolor</a>
+                            <p class="text">Short description</p>
+                            <div class="star-ratings-css">
+                                <div class="star-ratings-css-top"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                                <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <a class="link" href="#">Lorem ipsum dolor</a>
+                            <p class="text">Short description</p>
+                            <div class="star-ratings-css">
+                                <div class="star-ratings-css-top"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                                <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <a class="link" href="#">Lorem ipsum dolor</a>
+                            <p class="text">Short description</p>
+                            <div class="star-ratings-css">
+                                <div class="star-ratings-css-top"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                                <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
                             </div>
                         </div>
                     </div>
@@ -247,10 +188,7 @@
                 </div>
             </aside>
             <section class="content">
-                <div class="text-wrap">
-                    <h4 class="page-title">Lorem ipsum dolor sit amet</h4>
-                    <p class="text">Nulla ac accumsan libero. Vivamus pellentesque in sapien et tristique. Suspendisse elementum risus mattis diam tempor posuere ut vitae lorem. Vestibulum nisi mi, vulputate et fringilla sit amet, imperdiet pellentesque tortor. Vestibulum molestie turpis quis nulla pulvinar, nec molestie erat eleifend. Suspendisse auctor quam at ornare dignissim. Etiam suscipit dignissim risus, eu porttitor nunc consequat sed. Nunc varius faucibus bibendum. Vestibulum id massa dapibus, sollicitudin tellus ut, mattis est. Praesent condimentum cursus velit, sed iaculis ipsum egestas non.</p>
-                </div>
+                <h4 class="page-title">Игры</h4>
                 <div class="wrap">
                     <div class="row">
                         <div class="col">
@@ -266,6 +204,7 @@
                             <div class="buttons-wrap">
                                 <a class="link-play" href="#">Play</a>
                                 <a class="link-favorite" href="#"><span class="material-icons-outlined">favorite</span></a>
+                                <a class="link-play-seriously" href="#">Играть на деньги</a>
                             </div>
                         </div>
                         <div class="col">
@@ -281,6 +220,7 @@
                             <div class="buttons-wrap">
                                 <a class="link-play" href="#">Play</a>
                                 <a class="link-favorite" href="#"><span class="material-icons-outlined">favorite</span></a>
+                                <a class="link-play-seriously" href="#">Играть на деньги</a>
                             </div>
                         </div>
                         <div class="col">
@@ -296,6 +236,7 @@
                             <div class="buttons-wrap">
                                 <a class="link-play" href="#">Play</a>
                                 <a class="link-favorite" href="#"><span class="material-icons-outlined">favorite</span></a>
+                                <a class="link-play-seriously" href="#">Играть на деньги</a>
                             </div>
                         </div>
                         <div class="col">
@@ -311,6 +252,7 @@
                             <div class="buttons-wrap">
                                 <a class="link-play" href="#">Play</a>
                                 <a class="link-favorite" href="#"><span class="material-icons-outlined">favorite</span></a>
+                                <a class="link-play-seriously" href="#">Играть на деньги</a>
                             </div>
                         </div>
                         <div class="col">
@@ -326,6 +268,7 @@
                             <div class="buttons-wrap">
                                 <a class="link-play" href="#">Play</a>
                                 <a class="link-favorite" href="#"><span class="material-icons-outlined">favorite</span></a>
+                                <a class="link-play-seriously" href="#">Играть на деньги</a>
                             </div>
                         </div>
                         <div class="col">
@@ -341,6 +284,7 @@
                             <div class="buttons-wrap">
                                 <a class="link-play" href="#">Play</a>
                                 <a class="link-favorite" href="#"><span class="material-icons-outlined">favorite</span></a>
+                                <a class="link-play-seriously" href="#">Играть на деньги</a>
                             </div>
                         </div>
                         <div class="col">
@@ -356,6 +300,7 @@
                             <div class="buttons-wrap">
                                 <a class="link-play" href="#">Play</a>
                                 <a class="link-favorite" href="#"><span class="material-icons-outlined">favorite</span></a>
+                                <a class="link-play-seriously" href="#">Играть на деньги</a>
                             </div>
                         </div>
                         <div class="col">
@@ -371,6 +316,7 @@
                             <div class="buttons-wrap">
                                 <a class="link-play" href="#">Play</a>
                                 <a class="link-favorite" href="#"><span class="material-icons-outlined">favorite</span></a>
+                                <a class="link-play-seriously" href="#">Играть на деньги</a>
                             </div>
                         </div>
                         <div class="col">
@@ -386,51 +332,7 @@
                             <div class="buttons-wrap">
                                 <a class="link-play" href="#">Play</a>
                                 <a class="link-favorite" href="#"><span class="material-icons-outlined">favorite</span></a>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <h5 class="title"><a href="#">Game name</a></h5>
-                            <p class="desc">Short description</p>
-                            <div class="star-ratings-css">
-                                <div class="star-ratings-css-top"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                                <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                            </div>
-                            <div class="img-block">
-                                <img src="./assets/img/game.jpg" alt="">
-                            </div>
-                            <div class="buttons-wrap">
-                                <a class="link-play" href="#">Play</a>
-                                <a class="link-favorite" href="#"><span class="material-icons-outlined">favorite</span></a>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <h5 class="title"><a href="#">Game name</a></h5>
-                            <p class="desc">Short description</p>
-                            <div class="star-ratings-css">
-                                <div class="star-ratings-css-top"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                                <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                            </div>
-                            <div class="img-block">
-                                <img src="./assets/img/game.jpg" alt="">
-                            </div>
-                            <div class="buttons-wrap">
-                                <a class="link-play" href="#">Play</a>
-                                <a class="link-favorite" href="#"><span class="material-icons-outlined">favorite</span></a>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <h5 class="title"><a href="#">Game name</a></h5>
-                            <p class="desc">Short description</p>
-                            <div class="star-ratings-css">
-                                <div class="star-ratings-css-top"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                                <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                            </div>
-                            <div class="img-block">
-                                <img src="./assets/img/game.jpg" alt="">
-                            </div>
-                            <div class="buttons-wrap">
-                                <a class="link-play" href="#">Play</a>
-                                <a class="link-favorite" href="#"><span class="material-icons-outlined">favorite</span></a>
+                                <a class="link-play-seriously" href="#">Играть на деньги</a>
                             </div>
                         </div>
                     </div>
@@ -447,13 +349,11 @@
                         <li class="pag-item"><a class="pag-link" href="#"><span class="material-icons-outlined">arrow_forward_ios</span></a></li>
                     </ul>
                 </div>
+                <div class="text-wrap">
+                    <h4 class="page-title">Lorem ipsum dolor sit amet</h4>
+                    <p class="text">Nulla ac accumsan libero. Vivamus pellentesque in sapien et tristique. Suspendisse elementum risus mattis diam tempor posuere ut vitae lorem. Vestibulum nisi mi, vulputate et fringilla sit amet, imperdiet pellentesque tortor. Vestibulum molestie turpis quis nulla pulvinar, nec molestie erat eleifend. Suspendisse auctor quam at ornare dignissim. Etiam suscipit dignissim risus, eu porttitor nunc consequat sed. Nunc varius faucibus bibendum. Vestibulum id massa dapibus, sollicitudin tellus ut, mattis est. Praesent condimentum cursus velit, sed iaculis ipsum egestas non.</p>
+                </div>
             </section>
-            <div class="seo">
-                <h4 class="page-title">Lorem ipsum dolor sit amet</h4>
-                <p class="text">Nulla ac accumsan libero. Vivamus pellentesque in sapien et tristique. Suspendisse elementum risus mattis diam tempor posuere ut vitae lorem. Vestibulum nisi mi, vulputate et fringilla sit amet, imperdiet pellentesque tortor. Vestibulum molestie turpis quis nulla pulvinar, nec molestie erat eleifend. Suspendisse auctor quam at ornare dignissim. Etiam suscipit dignissim risus, eu porttitor nunc consequat sed. Nunc varius faucibus bibendum. Vestibulum id massa dapibus, sollicitudin tellus ut, mattis est. Praesent condimentum cursus velit, sed iaculis ipsum egestas non.</p>
-                <p class="text">Proin dictum cursus interdum. Aenean sagittis malesuada tortor ut lobortis. Donec blandit erat quis nulla semper suscipit. Etiam vulputate augue eu est elementum tincidunt et nec enim. Nulla facilisi. Nam varius sem sit amet tellus malesuada, non placerat diam egestas. Cras luctus mollis lorem et cursus. Mauris imperdiet, ante et consequat posuere, lectus odio mollis est, ac congue libero leo sit amet nisl.
-                    Donec vitae placerat justo.  Quisque faucibus metus nec consectetur pretium. Ut lobortis lorem eget lorem ornare, suscipit rutrum metus tincidunt. Nulla eu nisl eu nisi eleifend posuere sed at orci. Vivamus a justo interdum, facilisis urna ultrices, dictum quam. Donec metus magna, vestibulum vitae sodales non, accumsan sit amet turpis. Aliquam erat volutpat. Suspendisse potenti. Donec ut luctus metus. In gravida auctor feugiat. Nullam malesuada odio aliquet dignissim iaculis.</p>
-            </div>
         </div>
     </main>
     <footer class="footer">
@@ -479,13 +379,10 @@
             </div>
         </nav>
         <div class="copyright">
-            <div class="container">
-                <p>© 2016; все права защищены, все услуги сертифицированы.  При копировании материалов ссылка на источник обязательна</p>
-            </div>
+            <p>© 2016; все права защищены, все услуги сертифицированы.  При копировании материалов ссылка на источник обязательна</p>
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>

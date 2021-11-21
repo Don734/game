@@ -1,0 +1,235 @@
+.sidebar {
+    flex: 0 0 100%;
+    max-width: 220px;
+    margin-right: 10px;
+
+    .title {
+        font-size: 26px;
+        font-weight: normal;
+        color: $color-7;
+        text-transform: uppercase;
+    }
+
+    .nav {
+        margin-top: 20px;
+
+        .nav-menu {
+            display: flex;
+            flex-direction: column;
+
+            .nav-item.dropdown-item {
+                margin: 2.5px 0;
+                background: $color-11;
+                border-radius: 3px;
+
+                .nav-link.dropdown-link {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 10px 0;
+                    padding-left: 15px;
+                    padding-right: 10px;
+                    font-size: 18px;
+                    background: $color-5;
+                    text-transform: uppercase;
+                    border-top-left-radius: 3px;
+                    border-top-right-radius: 3px;
+
+                    .icon {
+                        color: $color-1;
+                    }
+                }
+
+                .dropdown-menu {
+                    display: none;
+                    padding: 10px;
+
+                    .nav-item {
+                        padding: 5px 0;
+                        
+                        .nav-link {
+                            transition: .1s ease;
+
+                            &:hover, &.active {
+                                color: $color-7;
+                            }
+                        }
+                    }
+                }
+
+                &.active {
+                    .nav-link.dropdown-link {
+                        .icon {
+                            transform: rotate(180deg);
+                        }
+                    }
+
+                    .dropdown-menu {
+                        display: block;
+                    }
+                }
+
+                &:first-of-type {
+                    margin-top: 0;
+                }
+
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .banner {
+        max-height: 370px;
+        height: 100%;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        padding: 25px 0;
+        background: $color-11;
+        text-align: center;
+
+        .title {
+            font-size: 44px;
+            font-weight: normal;
+            color: $color-10;
+            text-transform: uppercase;
+        }
+
+        .img-block {
+            margin-top: 30px;
+            height: 250px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .best-players {
+        margin-top: 25px;
+
+        .row {
+            display: flex;
+            flex-direction: column;
+
+            .col {
+                margin: 5px 0;
+                background: $color-11;
+
+                .link {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 10px 0;
+                    padding-left: 15px;
+                    padding-right: 10px;
+                    font-size: 18px;
+                    color: $color-7;
+                    background: $color-5;
+                    text-transform: uppercase;
+
+                    .icon {
+                        color: $color-1;
+                    }
+                }
+
+                .wrap {
+                    display: flex;
+                    align-items: center;
+                    padding: 15px 0;
+                    padding-left: 15px;
+                    padding-right: 10px;
+
+                    .img-block {
+                        max-width: 50px;
+                        width: 100%;
+                        height: 50px;
+                        border-radius: 3px;
+                        overflow: hidden;
+                    }
+
+                    .wrap-inner {
+                        margin-left: 10px;
+
+                        .paid {
+                            margin-top: 5px;
+                            font-weight: bold;
+                            color: $color-7;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .top-games, .new-games {
+        margin-top: 30px;
+
+        .row {
+            margin-top: 25px;
+
+            .col {
+                position: relative;
+                padding: 15px 0;
+
+                .link {
+                    text-transform: uppercase;
+                    text-decoration: underline;
+                }
+    
+                .text {
+                    margin: 5px 0;
+                    font-size: 14px;
+                    color: $color-10;
+                }
+
+                .star-ratings-css {
+                    margin-bottom: 0;
+                    font-size: 20px;
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    height: 1px;
+                    background: rgba($color: $color-1, $alpha: 0.1);
+                }
+            }
+        }
+    }
+
+    .news {
+        margin-top: 30px;
+
+        .row {
+            display: flex;
+            flex-direction: column;
+            
+            .col {
+                margin-top: 20px;
+    
+                .link {
+                    text-transform: uppercase;
+                    text-decoration: underline;
+                }
+    
+                .link, .text {
+                    font-size: 14px;
+                }
+    
+                .date {
+                    display: block;
+                    margin: 5px 0;
+                    font-size: 13px;
+                    color: $color-10;
+                }
+            }
+        }
+    }
+}
