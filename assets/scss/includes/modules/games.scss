@@ -40,6 +40,10 @@
             .common-wrap {
                 display: flex;
                 justify-content: space-between;
+
+                .social-row {
+                    flex: 0 0 20%;
+                }
             }
 
             .img-block {

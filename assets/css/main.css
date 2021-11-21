@@ -846,6 +846,9 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: space-between;
 }
+.main.game .content .game-wrap .common-wrap .social-row {
+  flex: 0 0 20%;
+}
 .main.game .content .game-wrap .img-block img {
   width: 100%;
 }
@@ -1139,9 +1142,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* === DESKTOP FIRST === */
-/* xl <= Extra extra large (xxl) */
-/* lg <= Extra large (xl) */
-/* md <= Large (lg) */
 /* sm <= Medium (md) */
 @media (max-width: 768px) {
   .header .header__top .container .header__top-left .header__brand {
