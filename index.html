@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Two+Tone" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/fonts.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <title>Start Template</title>
@@ -25,7 +26,7 @@
                     </a>
                 </div>
                 <div class="header__top-right">
-                    <a class="header__favorite" href="#"><span class="material-icons-outlined">favorite</span> Избранное</a>
+                    <a class="header__favorite" href="./favorites.html"><span class="material-icons-outlined">favorite</span> Избранное</a>
                     <div class="header__sign-wrap">
                         <a class="header__signin" href="#">Войти</a> / <a class="header__signup" href="#">Зарегистрироваться</a>
                     </div>
@@ -66,69 +67,113 @@
             </div>
         </nav>
         <div class="header__best-games">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <h5 class="title"><a href="game.html">Game name</a></h5>
-                        <p class="desc">Short description</p>
-                        <div class="star-ratings-css">
-                            <div class="star-ratings-css-top"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                            <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                        </div>
-                        <div class="img-block">
-                            <img src="./assets/img/game.jpg" alt="">
-                        </div>
-                        <div class="buttons-wrap">
-                            <a class="link-play" href="#">Play</a>
-                            <a class="link-favorite" href="#"><span class="material-icons-outlined">favorite</span></a>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <h5 class="title"><a href="#">Game name</a></h5>
-                        <p class="desc">Short description</p>
-                        <div class="star-ratings-css">
-                            <div class="star-ratings-css-top"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                            <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                        </div>
-                        <div class="img-block">
-                            <img src="./assets/img/game.jpg" alt="">
-                        </div>
-                        <div class="buttons-wrap">
-                            <a class="link-play" href="#">Play</a>
-                            <a class="link-favorite" href="#"><span class="material-icons-outlined">favorite</span></a>
+            <div class="container swiper-games">
+                <div class="row swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="col">
+                            <h5 class="title"><a href="game.html">Game name</a></h5>
+                            <p class="desc">Short description</p>
+                            <div class="star-ratings-css">
+                                <div class="star-ratings-css-top"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                                <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                            </div>
+                            <div class="img-block">
+                                <img src="./assets/img/game.jpg" alt="">
+                            </div>
+                            <div class="buttons-wrap">
+                                <a class="link-play" href="#">Play</a>
+                                <a class="link-favorite" href="#"><span class="material-icons-outlined">favorite</span></a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <h5 class="title"><a href="#">Game name</a></h5>
-                        <p class="desc">Short description</p>
-                        <div class="star-ratings-css">
-                            <div class="star-ratings-css-top"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                            <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                        </div>
-                        <div class="img-block">
-                            <img src="./assets/img/game.jpg" alt="">
-                        </div>
-                        <div class="buttons-wrap">
-                            <a class="link-play" href="#">Play</a>
-                            <a class="link-favorite" href="#"><span class="material-icons-outlined">favorite</span></a>
+                    <div class="swiper-slide">
+                        <div class="col">
+                            <h5 class="title"><a href="game.html">Game name</a></h5>
+                            <p class="desc">Short description</p>
+                            <div class="star-ratings-css">
+                                <div class="star-ratings-css-top"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                                <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                            </div>
+                            <div class="img-block">
+                                <img src="./assets/img/game.jpg" alt="">
+                            </div>
+                            <div class="buttons-wrap">
+                                <a class="link-play" href="#">Play</a>
+                                <a class="link-favorite" href="#"><span class="material-icons-outlined">favorite</span></a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <h5 class="title"><a href="#">Game name</a></h5>
-                        <p class="desc">Short description</p>
-                        <div class="star-ratings-css">
-                            <div class="star-ratings-css-top"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                            <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    <div class="swiper-slide">
+                        <div class="col">
+                            <h5 class="title"><a href="game.html">Game name</a></h5>
+                            <p class="desc">Short description</p>
+                            <div class="star-ratings-css">
+                                <div class="star-ratings-css-top"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                                <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                            </div>
+                            <div class="img-block">
+                                <img src="./assets/img/game.jpg" alt="">
+                            </div>
+                            <div class="buttons-wrap">
+                                <a class="link-play" href="#">Play</a>
+                                <a class="link-favorite" href="#"><span class="material-icons-outlined">favorite</span></a>
+                            </div>
                         </div>
-                        <div class="img-block">
-                            <img src="./assets/img/game.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="col">
+                            <h5 class="title"><a href="game.html">Game name</a></h5>
+                            <p class="desc">Short description</p>
+                            <div class="star-ratings-css">
+                                <div class="star-ratings-css-top"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                                <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                            </div>
+                            <div class="img-block">
+                                <img src="./assets/img/game.jpg" alt="">
+                            </div>
+                            <div class="buttons-wrap">
+                                <a class="link-play" href="#">Play</a>
+                                <a class="link-favorite" href="#"><span class="material-icons-outlined">favorite</span></a>
+                            </div>
                         </div>
-                        <div class="buttons-wrap">
-                            <a class="link-play" href="#">Play</a>
-                            <a class="link-favorite" href="#"><span class="material-icons-outlined">favorite</span></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="col">
+                            <h5 class="title"><a href="game.html">Game name</a></h5>
+                            <p class="desc">Short description</p>
+                            <div class="star-ratings-css">
+                                <div class="star-ratings-css-top"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                                <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                            </div>
+                            <div class="img-block">
+                                <img src="./assets/img/game.jpg" alt="">
+                            </div>
+                            <div class="buttons-wrap">
+                                <a class="link-play" href="#">Play</a>
+                                <a class="link-favorite" href="#"><span class="material-icons-outlined">favorite</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="col">
+                            <h5 class="title"><a href="game.html">Game name</a></h5>
+                            <p class="desc">Short description</p>
+                            <div class="star-ratings-css">
+                                <div class="star-ratings-css-top"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                                <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                            </div>
+                            <div class="img-block">
+                                <img src="./assets/img/game.jpg" alt="">
+                            </div>
+                            <div class="buttons-wrap">
+                                <a class="link-play" href="#">Play</a>
+                                <a class="link-favorite" href="#"><span class="material-icons-outlined">favorite</span></a>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </div>
     </header>
@@ -487,6 +532,8 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/slider.js"></script>
 </body>
 </html>

@@ -1,4 +1,7 @@
 $(document).ready(function () {
+    let starListTop = $('.star-ratings-css-top span');
+    let starListBottom = $('.star-ratings-css-bottom span');
+
     $('.openMenu').click(function (e) { 
         e.preventDefault();
         $('.nav').toggleClass('show');
@@ -33,6 +36,9 @@ $(document).ready(function () {
             $('.sidebar').removeClass('show');
         }
     })
+
+    // hoverRatings(starListTop);
+    // hoverRatings(starListBottom);
 });
 
 function isShowSidebar() {
@@ -45,4 +51,16 @@ function isShowSidebar() {
         $('.openSidebar').css('right', '240px');
         $('.openMenu').css('right', '240px');
     }
+}
+
+function hoverRatings(obj) {
+    $(obj).mouseover(function (e) { 
+        let width = 0;
+        width = 20 * ($(this).index() + 1);
+        $(e.target).parents().siblings('.star-ratings-css-top').css('width', `${width}%`);
+    })
+        .mouseout(function(e) {
+            $(e.target).parents().siblings('.star-ratings-css-top').css('width', '0');
+        })
+    ;
 }

@@ -1,5 +1,62 @@
 /* === DESKTOP FIRST === */
 
+@media (max-width: 1024px) {
+    .header {
+        .search {
+            .container {
+                justify-content: space-between;
+            }
+
+            .search-input {
+                max-width: 640px;
+            }
+
+            .telegram {
+                margin-left: 15px;
+            }
+        }
+    }
+
+    .main {
+        &.game {
+            .content {
+                .game-wrap {
+                    .game-gallery {
+                        .col {
+                            flex: 1 0 50%;
+                            max-width: 350px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.search, &.manufacturer {
+            .games {
+                .row {
+                    .col {
+                        max-width: none;
+                        flex: 1 0 45%;
+                    }
+                }
+            }
+        }
+
+        &.manufacturer {
+            .content {
+                .top-wrap {
+                    flex-wrap: wrap-reverse;
+                    margin-top: 30px;
+
+                    .left-block {
+                        max-width: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
 /* sm <= Medium (md) */
 @media (max-width: 768px) {
     .header {
@@ -35,6 +92,24 @@
     .openSidebar {
         display: block;
         top: 200px;
+    }
+
+    .main {
+        &.search, &.manufacturer {
+            .games {
+                .row {
+                    .col {
+                        &:nth-of-type(odd) {
+                            margin-left: 0;
+                        }
+
+                        &:nth-of-type(even) {
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     .sidebar {
@@ -149,6 +224,38 @@
         &.game {
             .content {
                 .game-wrap {
+                    .top-wrap {
+                        flex-wrap: wrap;
+
+                        .left-block, .right-block {
+                            margin: 0;
+                        }
+
+                        .right-block {
+                            max-width: unset;
+                            margin-top: 30px;
+                        }
+                    }
+
+                    .info-wrap {
+                        flex-wrap: wrap;
+
+                        .left-block, .right-block {
+                            margin: 0;
+                        }
+
+                        .right-block {
+                            margin-top: 15px;
+                        }
+                    }
+
+                    .game-gallery {
+                        .col {
+                            flex: 0 0 100%;
+                            max-width: none;
+                        }
+                    }
+
                     .common-wrap {
                         .social-row {
                             flex: 0 0 55%;
@@ -219,6 +326,43 @@
                                 margin-top: 10px;
                                 margin-left: 0;
                             }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.favorites {
+            .content {
+                .row {
+                    .col {
+                        max-width: unset;
+                        margin: 10px 0;
+                    }
+                }
+            }
+        }
+
+        &.search, &.manufacturer {
+            .games {
+                .row {
+                    flex-wrap: wrap;
+
+                    .col {
+                        max-width: unset;
+                        margin: 10px 0;
+                        flex: 0 0 100%;
+                    }
+                }
+            }
+
+            .articles {
+                .row {
+                    .col {
+                        flex-wrap: wrap;
+
+                        .img-block {
+                            margin-bottom: 20px;
                         }
                     }
                 }

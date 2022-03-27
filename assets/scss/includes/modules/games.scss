@@ -46,6 +46,164 @@
                 }
             }
 
+            .top-wrap, .info-wrap {
+                display: flex;
+                justify-content: space-between;
+
+                .left-block {
+                    max-width: 620px;
+                    margin-right: 10px;
+                }
+
+                .right-block {
+                    max-width: 300px;
+                    width: 100%;
+                    margin-left: 10px;
+
+                    .brand-block {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+
+                    .props {
+                        .props-list {
+                            margin-top: 20px;
+
+                            .prop {
+                                display: flex;
+                                justify-content: space-between;
+                                margin: 5px 0;
+
+                                .name {
+                                    color: $color-7;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .info-wrap {
+                margin-top: 15px;
+                color: $color-1;
+
+                .page-title {
+                    font-size: 20px;
+                }
+
+                ul {
+                    li {
+                        margin: 10px 0;
+                        font-size: 16px;
+
+                        &::before {
+                            margin-right: 10px;
+                        }
+                    }
+                }
+
+                .left-block {
+                    ul {
+                        li::before {
+                            content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+                            color: $color-6; /* Change the color */
+                            font-weight: bold; /* If you want it to be bold */
+                            display: inline-block; /* Needed to add space between the bullet and the text */
+                            width: 1em; /* Also needed for space (tweak if needed) */
+                        }
+                    }
+                }
+
+                .right-block {
+                    ul {
+                        li::before {
+                            font-family: "Font Awesome 5 Free";
+                            content: "\f058";
+                            color: $color-6; /* Change the color */
+                            font-weight: bold; /* If you want it to be bold */
+                            display: inline-block; /* Needed to add space between the bullet and the text */
+                            width: 1em; /* Also needed for space (tweak if needed) */
+                        }
+                    }
+                }
+            }
+
+            .table-wrap {
+                margin-top: 30px;
+                margin-bottom: 15px;
+
+                .page-title {
+                    font-size: 20px;
+                }
+
+                .table-pay {
+                    display: block;
+                    width: 100%;
+                    margin-top: 15px;
+                    color: $color-1;
+                    border: 1px solid $color-6;
+                    border-collapse: collapse;
+                    border-radius: 10px;
+
+                    thead {
+                        background: linear-gradient(90deg, rgba($color-4, 1) 0%, rgba($color-5, 1) 50%, rgba($color-4, 1) 100%);
+
+                        tr {
+                            height: 40px;
+
+                            th:first-of-type {
+                                width: 525px;
+                                text-align: left;
+                                padding: 0 30px;
+                                border-left: 0;
+                            }
+
+                            th {
+                                width: 100px;
+                                font-size: 16px;
+                                border-left: 1px solid $color-6;
+                            }
+                        }
+                    }
+
+                    tbody {
+                        tr {
+                            padding: 15px 0;
+                            height: 40px;
+
+                            td:first-of-type {
+                                text-align: left;
+                                padding: 0 30px;
+                                border-left: 0;
+                            }
+
+                            td {
+                                text-align: center;
+                                border-left: 1px solid $color-6;
+                            }
+
+                            &:nth-of-type(even) {
+                                background: rgba($color: $color-10, $alpha: .3);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .game-gallery {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .col {
+                    flex: 1 0 30%;
+                    max-width: 300px;
+                    margin: 15px 0;
+                    text-align: center;
+                }
+            }
+
             .img-block {
                 img {
                     width: 100%;

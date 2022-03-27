@@ -101,7 +101,7 @@ h1, h2, h3, h4, h5, h6 {
                     right: 0;
                 }
 
-                &:hover {
+                &:hover, &.active {
                     color: #756f00;
                     background: linear-gradient(0deg, rgba(#8d9120, 1) 0%, rgba($color-7, 1) 100%);
                     border: 1px solid $color-7;
@@ -109,6 +109,11 @@ h1, h2, h3, h4, h5, h6 {
                     &::before, &::after {
                         background: linear-gradient(0deg, rgba(#c1b706, 1) 0%, rgba(#fff41e, 1) 50%, rgba(#c1b706, 1) 100%);
                     }
+                }
+
+                &.disable {
+                    opacity: 0.5;
+                    cursor: not-allowed;
                 }
             }
 
@@ -135,7 +140,7 @@ h1, h2, h3, h4, h5, h6 {
         top: 0;
         left: 0;
         display: block;
-        width: 80%;
+        width: 0;
         padding: 0;
         color: $color-7;
         overflow: hidden;

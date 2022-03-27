@@ -66,4 +66,10 @@
             font-size: 12px;
         }
     }
+
+    &.fix {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
 }
