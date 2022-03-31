@@ -39,6 +39,7 @@
 
             .common-wrap {
                 display: flex;
+                flex-direction: row-reverse;
                 justify-content: space-between;
 
                 .social-row {
@@ -90,6 +91,10 @@
 
                 .page-title {
                     font-size: 20px;
+
+                    .icon img {
+                        width: 20px;
+                    }
                 }
 
                 ul {
@@ -145,6 +150,7 @@
                     border: 1px solid $color-6;
                     border-collapse: collapse;
                     border-radius: 10px;
+                    overflow: hidden;
 
                     thead {
                         background: linear-gradient(90deg, rgba($color-4, 1) 0%, rgba($color-5, 1) 50%, rgba($color-4, 1) 100%);

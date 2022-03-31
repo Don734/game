@@ -912,6 +912,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .main.game .content .game-wrap .common-wrap {
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
 }
 .main.game .content .game-wrap .common-wrap .social-row {
@@ -953,6 +954,9 @@ h1, h2, h3, h4, h5, h6 {
 .main.game .content .game-wrap .info-wrap .page-title {
   font-size: 20px;
 }
+.main.game .content .game-wrap .info-wrap .page-title .icon img {
+  width: 20px;
+}
 .main.game .content .game-wrap .info-wrap ul li {
   margin: 10px 0;
   font-size: 16px;
@@ -974,7 +978,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .main.game .content .game-wrap .info-wrap .right-block ul li::before {
   font-family: "Font Awesome 5 Free";
-  content: "";
+  content: "\f058";
   color: #d5cb02;
   /* Change the color */
   font-weight: bold;
@@ -999,6 +1003,7 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid #d5cb02;
   border-collapse: collapse;
   border-radius: 10px;
+  overflow: hidden;
 }
 .main.game .content .game-wrap .table-wrap .table-pay thead {
   background: linear-gradient(90deg, #041833 0%, #102f59 50%, #041833 100%);
