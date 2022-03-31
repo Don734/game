@@ -82,6 +82,19 @@
                             }
                         }
                     }
+
+                    .review-link {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 250px;
+                        height: 40px;
+                        margin: 0 auto;
+                        margin-top: 30px;
+                        background: $color-6;
+                        border-radius: 20px;
+                        text-transform: uppercase;
+                    }
                 }
             }
 
@@ -214,6 +227,109 @@
                 img {
                     width: 100%;
                 }
+            }
+        }
+    }
+
+    .game-review {
+        padding-top: 30px;
+        padding-bottom: 20px;
+
+        .review {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .row {
+            margin-top: 30px;
+
+            .col {
+                max-width: 820px;
+                width: 100%;
+                margin: 0 auto;
+
+                .user-info {
+                    display: flex;
+                    align-items: center;
+
+                    .img-block {
+                        margin-right: 10px;
+                    }
+
+                    .username {
+                        position: relative;
+
+                        .badge {
+                            content: 'Новичок';
+                            position: absolute;
+                            top: 0;
+                            right: -85px;
+                            width: 75px;
+                            height: 15px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 12px;
+                            color: $color-2;
+                            background: $color-7;
+                            border-radius: 10px;
+                        }
+                    }
+
+                    .date {
+                        font-size: 12px;
+                        color: $color-10;
+                    }
+                }
+
+                .wrap {
+                    margin-top: 15px;
+
+                    .rate-wrap {
+                        display: flex;
+                        align-items: center;
+                        margin-top: 30px;
+                        height: 25px;
+
+                        p {
+                            margin-right: 20px;
+                            font-size: 16px;
+                            color: $color-7;
+                        }
+
+                        .star-ratings-css {
+                            margin-bottom: 0;
+                        }
+
+                        .rate {
+                            margin-left: 20px;
+                            color: $color-7;
+                        }
+                    }
+                }
+            }
+        }
+
+        .swiper-button-next, .swiper-button-prev {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            font-size: 16px;
+            color: #4d97f7;
+            background: linear-gradient(0deg, $color-11 0%, $color-10 100%);
+            border: 1px solid $brd-color-1;
+            border-radius: 50px;
+
+            &::after {
+                font-size: 18px;
+            }
+
+            &:hover {
+                color: #756f00;
+                background: linear-gradient(0deg, #8d9120 0%, $color-7 100%);
+                border: 1px solid $color-7;
             }
         }
     }

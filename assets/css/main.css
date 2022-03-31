@@ -947,6 +947,18 @@ h1, h2, h3, h4, h5, h6 {
 .main.game .content .game-wrap .top-wrap .right-block .props .props-list .prop .name, .main.game .content .game-wrap .info-wrap .right-block .props .props-list .prop .name {
   color: #fff200;
 }
+.main.game .content .game-wrap .top-wrap .right-block .review-link, .main.game .content .game-wrap .info-wrap .right-block .review-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 40px;
+  margin: 0 auto;
+  margin-top: 30px;
+  background: #d5cb02;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
 .main.game .content .game-wrap .info-wrap {
   margin-top: 15px;
   color: #ffffff;
@@ -1051,6 +1063,92 @@ h1, h2, h3, h4, h5, h6 {
 }
 .main.game .content .game-wrap .img-block img {
   width: 100%;
+}
+.main.game .game-review {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.main.game .game-review .review {
+  position: relative;
+  overflow: hidden;
+}
+.main.game .game-review .row {
+  margin-top: 30px;
+}
+.main.game .game-review .row .col {
+  max-width: 820px;
+  width: 100%;
+  margin: 0 auto;
+}
+.main.game .game-review .row .col .user-info {
+  display: flex;
+  align-items: center;
+}
+.main.game .game-review .row .col .user-info .img-block {
+  margin-right: 10px;
+}
+.main.game .game-review .row .col .user-info .username {
+  position: relative;
+}
+.main.game .game-review .row .col .user-info .username .badge {
+  content: "Новичок";
+  position: absolute;
+  top: 0;
+  right: -85px;
+  width: 75px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  color: #000000;
+  background: #fff200;
+  border-radius: 10px;
+}
+.main.game .game-review .row .col .user-info .date {
+  font-size: 12px;
+  color: #3764a0;
+}
+.main.game .game-review .row .col .wrap {
+  margin-top: 15px;
+}
+.main.game .game-review .row .col .wrap .rate-wrap {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  height: 25px;
+}
+.main.game .game-review .row .col .wrap .rate-wrap p {
+  margin-right: 20px;
+  font-size: 16px;
+  color: #fff200;
+}
+.main.game .game-review .row .col .wrap .rate-wrap .star-ratings-css {
+  margin-bottom: 0;
+}
+.main.game .game-review .row .col .wrap .rate-wrap .rate {
+  margin-left: 20px;
+  color: #fff200;
+}
+.main.game .game-review .swiper-button-next, .main.game .game-review .swiper-button-prev {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  color: #4d97f7;
+  background: linear-gradient(0deg, #0c2444 0%, #3764a0 100%);
+  border: 1px solid #11305a;
+  border-radius: 50px;
+}
+.main.game .game-review .swiper-button-next::after, .main.game .game-review .swiper-button-prev::after {
+  font-size: 18px;
+}
+.main.game .game-review .swiper-button-next:hover, .main.game .game-review .swiper-button-prev:hover {
+  color: #756f00;
+  background: linear-gradient(0deg, #8d9120 0%, #fff200 100%);
+  border: 1px solid #fff200;
 }
 .main.game .popularity-games, .main.game .new-games {
   padding-top: 30px;
