@@ -166,7 +166,7 @@
                     overflow: hidden;
 
                     thead {
-                        background: linear-gradient(90deg, rgba($color-4, 1) 0%, rgba($color-5, 1) 50%, rgba($color-4, 1) 100%);
+                        background: $color-6;
 
                         tr {
                             height: 40px;
@@ -181,6 +181,7 @@
                             th {
                                 width: 100px;
                                 font-size: 16px;
+                                color: $color-2;
                                 border-left: 1px solid $color-6;
                             }
                         }
@@ -331,6 +332,28 @@
                 background: linear-gradient(0deg, #8d9120 0%, $color-7 100%);
                 border: 1px solid $color-7;
             }
+        }
+
+        .no-review {
+            max-width: 830px;
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .set-review {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 40px;
+            margin: 0 auto;
+            margin-top: 30px;
+            color: $color-2;
+            background: $color-6;
+            border-radius: 20px;
+            text-transform: uppercase;
         }
     }
 

@@ -990,7 +990,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .main.game .content .game-wrap .info-wrap .right-block ul li::before {
   font-family: "Font Awesome 5 Free";
-  content: "\f058";
+  content: "";
   color: #d5cb02;
   /* Change the color */
   font-weight: bold;
@@ -1018,7 +1018,7 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
 }
 .main.game .content .game-wrap .table-wrap .table-pay thead {
-  background: linear-gradient(90deg, #041833 0%, #102f59 50%, #041833 100%);
+  background: #d5cb02;
 }
 .main.game .content .game-wrap .table-wrap .table-pay thead tr {
   height: 40px;
@@ -1032,6 +1032,7 @@ h1, h2, h3, h4, h5, h6 {
 .main.game .content .game-wrap .table-wrap .table-pay thead tr th {
   width: 100px;
   font-size: 16px;
+  color: #000000;
   border-left: 1px solid #d5cb02;
 }
 .main.game .content .game-wrap .table-wrap .table-pay tbody tr {
@@ -1149,6 +1150,26 @@ h1, h2, h3, h4, h5, h6 {
   color: #756f00;
   background: linear-gradient(0deg, #8d9120 0%, #fff200 100%);
   border: 1px solid #fff200;
+}
+.main.game .game-review .no-review {
+  max-width: 830px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 30px;
+  text-align: center;
+}
+.main.game .game-review .set-review {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 40px;
+  margin: 0 auto;
+  margin-top: 30px;
+  color: #000000;
+  background: #d5cb02;
+  border-radius: 20px;
+  text-transform: uppercase;
 }
 .main.game .popularity-games, .main.game .new-games {
   padding-top: 30px;
