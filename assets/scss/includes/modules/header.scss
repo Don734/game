@@ -244,18 +244,31 @@
             }
         }
 
-        .telegram {
+        .icons {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 30px;
-            height: 30px;
-            margin-left: 30px;
-            border: 1px solid #229ED9;
-            border-radius: 50%;
+            margin-left: 15px;
 
-            .icon {
-                color: #229ED9;
+            .telegram, .gift {
+                margin: 0 5px;
+            }
+            
+            .telegram {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 30px;
+                height: 30px;
+                border: 1px solid #229ED9;
+                border-radius: 50%;
+    
+                .icon {
+                    color: #229ED9;
+                }
+            }
+
+            .gift {
+                width: 30px;
+                height: 30px;
             }
         }
     }

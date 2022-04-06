@@ -411,18 +411,28 @@ h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
   opacity: 0.7;
 }
-.header .search .telegram {
+.header .search .icons {
+  display: flex;
+  margin-left: 15px;
+}
+.header .search .icons .telegram, .header .search .icons .gift {
+  margin: 0 5px;
+}
+.header .search .icons .telegram {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 30px;
   height: 30px;
-  margin-left: 30px;
   border: 1px solid #229ED9;
   border-radius: 50%;
 }
-.header .search .telegram .icon {
+.header .search .icons .telegram .icon {
   color: #229ED9;
+}
+.header .search .icons .gift {
+  width: 30px;
+  height: 30px;
 }
 .header .header__best-games {
   position: relative;
@@ -947,6 +957,21 @@ h1, h2, h3, h4, h5, h6 {
 .main.game .content .game-wrap .top-wrap .right-block .props .props-list .prop .name, .main.game .content .game-wrap .info-wrap .right-block .props .props-list .prop .name {
   color: #fff200;
 }
+.main.game .content .game-wrap .top-wrap .right-block .props .props-list .prop .value, .main.game .content .game-wrap .info-wrap .right-block .props .props-list .prop .value {
+  order: 3;
+}
+.main.game .content .game-wrap .top-wrap .right-block .props .props-list .prop:before, .main.game .content .game-wrap .info-wrap .right-block .props .props-list .prop:before {
+  content: "";
+  /* Выводим линию */
+  border-bottom: 1px dotted #3764a0;
+  /* Параметры линии */
+  flex-grow: 1;
+  /* Линия занимает всё доступное пространство */
+  order: 2;
+  /* Выводим вторым */
+  margin: 0 5px;
+  /* Расстояние от текста */
+}
 .main.game .content .game-wrap .top-wrap .right-block .review-link, .main.game .content .game-wrap .info-wrap .right-block .review-link {
   display: flex;
   justify-content: center;
@@ -970,11 +995,13 @@ h1, h2, h3, h4, h5, h6 {
   width: 20px;
 }
 .main.game .content .game-wrap .info-wrap ul li {
-  margin: 10px 0;
   font-size: 16px;
 }
 .main.game .content .game-wrap .info-wrap ul li::before {
   margin-right: 10px;
+}
+.main.game .content .game-wrap .info-wrap .left-block ul li {
+  margin: 25px 0;
 }
 .main.game .content .game-wrap .info-wrap .left-block ul li::before {
   content: "•";
@@ -988,9 +1015,19 @@ h1, h2, h3, h4, h5, h6 {
   width: 1em;
   /* Also needed for space (tweak if needed) */
 }
+.main.game .content .game-wrap .info-wrap .left-block ul li:last-of-type {
+  margin-bottom: 0;
+}
+.main.game .content .game-wrap .info-wrap .right-block {
+  padding: 15px 10px;
+  background: linear-gradient(90deg, #041833 0%, #102f59 50%, #041833 100%);
+}
+.main.game .content .game-wrap .info-wrap .right-block ul li {
+  margin: 10px 0;
+}
 .main.game .content .game-wrap .info-wrap .right-block ul li::before {
   font-family: "Font Awesome 5 Free";
-  content: "";
+  content: "\f058";
   color: #d5cb02;
   /* Change the color */
   font-weight: bold;
@@ -1466,6 +1503,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 .manufacturer .content .top-wrap .left-block .props-list .prop .name {
   color: #fff200;
+}
+.manufacturer .content .top-wrap .left-block .props-list .prop .value {
+  order: 3;
+}
+.manufacturer .content .top-wrap .left-block .props-list .prop:before {
+  content: "";
+  /* Выводим линию */
+  border-bottom: 1px dotted #3764a0;
+  /* Параметры линии */
+  flex-grow: 1;
+  /* Линия занимает всё доступное пространство */
+  order: 2;
+  /* Выводим вторым */
+  margin: 0 5px;
+  /* Расстояние от текста */
 }
 .manufacturer .content .main-desc {
   margin-top: 30px;
